@@ -19,10 +19,13 @@ from django.contrib import admin
 from django.urls import path
 from apitest import views
 from django.conf.urls import url, include
+from product import proviews
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('test/',views.test),#加入关联路径和函数
     path('login/',views.login),
     url(r'^accounts/', include('users.urls')),
+    path('product_manage/', proviews.product_manage),
+    path('productsearch/', proviews.productsearch),
 ]

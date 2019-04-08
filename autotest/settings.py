@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'apitest',
     'users',
+    'product',
+    'bootstrap4',
 ]
 AUTH_USER_MODEL = 'users.User'
 
@@ -157,6 +159,6 @@ USERS_CHECK_PASSWORD_COMPLEXITY = True
 USERS_SPAM_PROTECTION = False  # important!
 
 #config logined url，registered_user_redirect_to
-LOGIN_REDIRECT_URL='/test'
+LOGIN_REDIRECT_URL='/product_manage'
 #错误LOGIN_REDIRECT_URL='.\\users\templates\\users\\profile.html'
 #LOGIN_REDIRECT_URL = 'https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Authentication'
